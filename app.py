@@ -25,7 +25,7 @@ st.title("Defect Detection")
 
 
 # Sidebar
-st.sidebar.header("Model Config")
+st.sidebar.header("Model Configurations")
 # Model Options
 model_type = st.sidebar.radio(
     "Task Type:", ['Segmentation'])
