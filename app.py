@@ -21,11 +21,11 @@ st.set_page_config(
 st.title("Defect Detection")
 
 #Logo
-#st.sidebar.image("logo-normal.png")
+st.sidebar.image("logo-normal.png")
 
 
 # Sidebar
-st.sidebar.header("Model Configurations")
+st.sidebar.header("Model Config")
 # Model Options
 model_type = st.sidebar.radio(
     "Task Type:", ['Segmentation'])
@@ -51,7 +51,6 @@ source_radio = st.sidebar.radio(
     "Source Type", settings.SOURCES_LIST)
 
 source_img = None
-helper.play_webcam(confidence, model)
 # If image is selected
 if source_radio == settings.IMAGE:
     source_img = st.sidebar.file_uploader(
