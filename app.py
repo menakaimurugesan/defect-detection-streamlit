@@ -21,7 +21,7 @@ st.set_page_config(
 st.title("Defect Detection")
 
 #Logo
-st.sidebar.image("logo-normal.png")
+st.sidebar.image("tm_logo.png")
 
 
 # Sidebar
